@@ -1,0 +1,24 @@
+<div>
+  <h2>All My Stuff</h2>
+  <h3>Users</h3>
+    <p>
+      <% @all_users.each do |u| %>
+        <p> <%= u.username %> </p>
+        <p> <%= u.email %> </p>
+        <p> <%= u.age %> </p>
+      <% end %>
+    </p>
+  <h3>Todos</h3>
+    <p>
+      <% @all_todos.each do |t| %>
+        <p> <%= t.tasks %> </p>
+        <p> <%= t.finished %> </p>
+      <% end %>
+    </p>
+  <h3>Cats</h3>
+    <p>
+      <% @all_cats.each do |c| %>
+        <p> <%= c.name %> </p>
+      <% end %>
+    </p>
+</div>
